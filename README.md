@@ -1,5 +1,7 @@
 # Classic Arcade Game Clone Project
 
+My work is in /js/app.js labeled with //aa
+
 ## Table of Contents
 
 - How To Play
