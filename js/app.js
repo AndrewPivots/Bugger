@@ -1,6 +1,8 @@
 //aa every global variable lessens performance?
 const borderL = -100;
 const borderR = 510;
+const tileW = 100;
+const tileH = 80;
 
 // Enemies our player must avoid
 var Enemy = function(x, y, speed) {
@@ -63,13 +65,13 @@ Player.prototype.render = function(){
 }
 Player.prototype.handleInput = function(allowedKeys){
   if(allowedKeys == 'left' && this.x > 0){
-    this.x -= 100;
+    this.x -= tileW;
   } else if (allowedKeys == 'right' && this.x < 400){
-    this.x += 100;
+    this.x += tileW;
   } else if (allowedKeys == 'down' && this.y < 375){
-    this.y += 80;
+    this.y += tileH;
   } else if (allowedKeys == 'up' && this.y > -25){
-    this.y -= 80;
+    this.y -= tileH;
   } else {
     //window.alert('Ouch!');
   }
